@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "sample-zipcode-import-app"
+  description: "Artifacts generator via Spec."
+  annotations:
+    github.com/project-slug: veecode-homolog/sample-zipcode-import-app
+    backstage.io/techdocs-ref: dir:.
+    github.com/workflows: publish.yml
+    kong-manager/service-name: app.sample-zipcode-import-app.sample-zipcode-import-app-service-0.80
+    kong-manager/instance: /kong-manager/aws-k8s-ec2-teste
+spec:
+  type: devops
+  lifecycle: experimental
+  owner: "group:default/admin"
+  providesApis:
+    - sample-zipcode-import-app
